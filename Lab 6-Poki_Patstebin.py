@@ -58,5 +58,5 @@ def pasting_to_the_bin(title, body):
         return(pastebin_response.text)
     else:
         print("Response Failed")
-        return
+        return(pastebin_response.status_code)
 main()
