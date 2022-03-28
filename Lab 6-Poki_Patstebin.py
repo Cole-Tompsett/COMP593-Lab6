@@ -17,6 +17,7 @@ def main():
 
     return
 
+#gets information about the pokemon
 def Getting_poke_info(Pokemon):
 
     print("Getting pokemon Information...", end=' ')
@@ -30,6 +31,7 @@ def Getting_poke_info(Pokemon):
         print("Response failed")
         return
 
+#lists the abilities of the pokemon and makes a title for the pastebin post
 def poke_abilities(pokedict):
     title = pokedict['name'] + "'s abilities"
 
@@ -40,7 +42,7 @@ def poke_abilities(pokedict):
     return(poke_info,title)
     
 
-
+#makes a pastebin post and returns the url back to the user
 def pasting_to_the_bin(title, body):
     
     print("Posting to PasteBin...", end=' ')
